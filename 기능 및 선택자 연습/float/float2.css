@@ -1,0 +1,48 @@
+
+
+/* float 상대속성으론 상실 옵션 초기화 */
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    float: left;
+}
+
+ul li:last-child{
+    float: right;
+}
+
+
+ul{
+    background-color: blue;
+    padding: 20px;
+}
+
+li{
+    background-color: chocolate;
+    padding: 20px;
+    margin: 5px;
+}
+
+div p:nth-of-type(2){
+    background-color: red;
+}
+
+div p:nth-child(3){
+    background-color: green;
+}
+
+ul li:nth-child(2){
+    width: 100px;
+    
+}

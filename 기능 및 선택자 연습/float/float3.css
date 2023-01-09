@@ -1,0 +1,37 @@
+
+/* 실무에서는 전체 선택자를 잘 사용은 안함 */
+*{
+    *{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+div{
+    background:blue;
+}
+div li{
+    float:left;
+    margin:5px;
+    padding:5px;
+}
+div ul:nth-child(1){
+    float:left;
+}
+div ul:nth-child(1) li:nth-child(1){
+    background:yellow;
+}
+div ul:nth-child(1) li:nth-child(2){
+    background:magenta;
+}
+div ul:nth-child(2){
+    float:right;
+}
+div ul:nth-child(2) li{
+    background:green;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습하기(집)</title>
+    <link rel="stylesheet" href="layoutpr.css">
+</head>
+<body>
+        <header class="clearfix">
+        <!-- <div class="wrap">    지금은 굳이 필요없음 -->
+            <h1 id="logo">logo</h1>
+            <nav>
+                <ul  class="clearfix">
+                    <li>메뉴1</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                    <li>메뉴4</li>
+                </ul>
+            </nav>
+        <!-- </div>     -->
+    </header>
+    <main class="clearfix">  <!--main 안에 태그 선정을 무엇으로 해야할지 헷갈렸음-->
+        <section class="img">
+            <article>이미지자리</article>
+        </section>
+        <div  class="clearfix">
+            <section class="content">
+                <h2>공지사항</h2>
+                <article>공지사항 내용</article>
+            </section>
+            <section class="content">
+                <h2>배너</h2>
+                <article>배너 내용</article>
+            </section>
+            <section class="content">
+                <h2>바로가기</h2>
+                <article>바로가기 내용</article>
+            </section>
+        </div>
+        </main>
+    <footer class="clearfix">
+        <p>하단로고</p>
+        <p>copyright</p>
+        <p>SNS</p>
+    </footer>
+</body>
+</html>

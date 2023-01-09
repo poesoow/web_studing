@@ -1,0 +1,43 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+
+#wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    height: 350px;
+    border: 1px solid red;
+}
+
+
+
+.box1{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 306px;
+    height: 249px;
+    background-color: #ff0000;
+}
+
+.box2{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 0;
+    width: 337px;
+    height: 281px;
+    background-color: #000000;
+}

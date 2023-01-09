@@ -1,0 +1,56 @@
+/*
+선택자{
+	속성: 속성값;
+}
+*/
+/* 정석은 여러줄에 걸쳐서 하지만 실무에서는 줄을 줄이기 위해 한줄로 선언*/
+
+/* 주석단축키 ctrl + / */
+
+ul, li{list-style: none; margin: 0; padding: 0;}
+
+/* 아이디 선택자 */
+#top{
+    background-color: teal;
+}
+
+
+/* 클래스 선택자 */
+.red{
+    color: red;
+}
+
+/* float: left;버그를 수정하기 위해 부모 태그에 아래내용 추가 */
+header nav ul::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+header nav ul li{
+    float: left;
+}
+
+
+#content{
+    background-color: thistle;
+}
+
+/* float: right;버그를 수정하기 위해 부모 태그에 아래내용 추가 */
+main aside ul::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* 또는 공통 class를 넣어 할수도 있음 클래스는 ul에 부여
+.clearfix::after{       
+    content: '';
+    clear: both;
+    display: block;
+} */
+
+main aside ul li{
+    float: right;
+}

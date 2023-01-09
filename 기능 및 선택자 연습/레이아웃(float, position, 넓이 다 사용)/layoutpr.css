@@ -1,0 +1,30 @@
+/* 탭키로 항목들 이동은 어떻게 하게 한거지*/
+
+
+/* 초기값 설정 */
+*{list-style: none; padding: 0; margin: 0;}
+.clearfix::after{content: ''; clear: both; display: block;}
+
+/* 가장 큰 영역 파란색 표시 */
+header, main, footer{border: 4px solid blue; margin: 2px auto; width: 1200px;}   /*중앙으로 보내기 어떻게 하지 -> sol) margin: 2px auto; */
+
+header h1{border: 3px solid red; float: left; width:150px; margin: 1px auto; text-align: center;}
+header nav{border: 3px solid red; float: right; width:300px; margin: 1px auto;}            /*높이는 부모태그에 맞추고 싶은데 어떻게 하지?*/
+header nav ul{border: 2px solid purple; width:250px; margin: auto;}                                       /* nav 태그 안에 ul을 가운데 정렬 하고 싶은데 어떻게 하지?(nav는 넓이 300px, ul은 250px 유지한채로) -> sol) margin: auto;*/
+header nav ul li{border: 2px solid green; float: left; width:50px; margin: 1px 2px;}
+
+main .img{border: 3px solid red; width: auto; height: 400px; margin: 1px; text-align: center;}           /* text를 상하로도 중간에 두려면? */
+main div{border: 3px solid red; box-sizing: border-box;}
+main .content{border: 3px solid red; float: left; width: 32%;}                                          /* div{box-sizing: border-box;} 랑 .content{width: 33%} 아닌데 어떻게 사용하지? */
+main .content h2{border: 1px solid black; text-align: center; margin:1px;}
+main .content article{border: 1px solid black; text-align: left; height: 100px; margin:1px;}
+
+footer p{border: 3px solid red; float: left;}                                                          /* 위에 content고민 처럼 33% 적용 어떻게 하지 */
+
+
+
+/* 추가로 더 배운거 적용해볼것
+1. 반응형 만들기 미디어쿼리 활용
+2. 사진 2개 넣어서 z-index 활용해서 겹치도록 만들기
+3. position 적용해보기 (지금 페이지에서 position을 적용을 해야 하는게 있는지 없는지도 모르겠음 현재 이해도 30%?..)
+*/

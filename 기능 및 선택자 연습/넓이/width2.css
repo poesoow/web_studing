@@ -1,0 +1,12 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    height: 100vh; /* 뷰포트의 높이 적용 : 100vh = 100% 동일 */
+    background-color: blue;
+    border: 1px solid red;
+    box-sizing: border-box;
+}

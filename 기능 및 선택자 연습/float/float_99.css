@@ -1,0 +1,32 @@
+ul, li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+div ul:nth-child(1){
+    float: left;
+    background-color: aqua;
+}
+
+div ul:nth-child(2){
+    float: right;
+    background-color: red;
+}
+
+
+div ul li{
+    float: left;
+    margin: 20px;
+}
+
+div{
+    border: 1px solid red;
+
+}

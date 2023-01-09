@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family: 'Ansungtangmyun-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ansungtangmyun-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header{
+    /* position: relative;     높이를 직접 지정할때는 필요가 없음 */
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+header h1{
+    float: left;
+    margin: 20px 0 0 20px;
+    border: 1px solid red;
+    }
+
+img{
+    display: block;
+}
+
+header h1 a{
+    display: block;
+    height: 75px;
+    border: 1px solid green;
+    background:url("imges/logo_g.png") no-repeat;
+    font-family: 'KyoboHandwriting2021sjy';
+    background-position-x: 10px;
+    background-position-y: 5px;
+    padding: 5px 10px 5px 85px;
+    color: black;
+    text-decoration: none;
+    }
+
+header nav{
+    float: right;
+    margin: 15px 30px 0 0;
+    border: 1px solid red;
+}
+
+header nav ul{
+    margin: 0;
+    width: 700px;
+}
+
+header nav ul li{
+    float: left;
+    margin: 0 0;
+    border: 1px solid blue;
+    width: 25%;
+}
+
+header nav ul li a{
+    border: 1px solid red;
+    display: block;
+    padding: 10px 0px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Ansungtangmyun-Bold';
+}
+
+/* 비주얼 */
+.visual{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid red;   
+    background-color: aqua;
+    background-image: url("imges/logo.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-size: contain;   /* 높이에 맞춰서 늘어남 */
+    /* background-size: cover;     넓이에 맞춰서 늘어남 */
+    /* background-size: 80%; */
+    /* background-size: 1000px 100px; */
+    /* background-position: 100px 10px;     */ 
+    background: url("imges/logo.jpg") no-repeat 50px 10px ;   /* 여러줄에 하지 않고 한줄로 설정(어떤 내용은 한줄로 안되는것도 있음) */
+}
+
+.visual h2{
+    height: 180px;
+    color: coral;  
+    font-size: 30px;
+    font-weight: bold;   /* 600 굵게정도 */
+    text-decoration: underline;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 50px 10px 2px rgb(182, 181, 181);
+    border: 1px solid blue;
+    /* box-shadow: 60px 10px 100px red; */
+}
+
+
+/* 콘텐츠 */
+main{
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #ccc;
+
+}
+
+/* 600  300  300 */
+
+main .notice_gal{
+    float: left;
+    width: 600px;
+    border: 1px solid red;
+}
+
+main .banner{
+    float: left;
+    width: 300px;
+    border: 1px solid red;
+}
+
+main .quick{
+    float: left;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* 푸터 */
+footer{
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    /* border: 1px solid red;    */
+    background-color: blue;
+}
+
+/* 800 200 200 */
+
+footer h2{
+    float: left;
+    border: 1px red solid;
+    width: 200px;
+    padding: 0 20px;
+}
+
+footer .copy{
+    float: left;
+    border: 1px red solid;
+    width: 800px;
+}
+
+footer .sns{
+    float: left;
+    border: 1px red solid;
+    width: 200px
+}
+
